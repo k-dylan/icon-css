@@ -1,0 +1,25 @@
+{
+  "name": "icon-css",
+  "version": "1.0.0",
+  "description": "使用CSS基于单个标签制作的ICON图标",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "gulp-stylus": "^2.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-dylan/icon-css.git"
+  },
+  "author": "dylan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-dylan/icon-css/issues"
+  },
+  "homepage": "https://github.com/k-dylan/icon-css#readme"
+}

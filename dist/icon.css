@@ -47,3 +47,33 @@
   border-style: solid;
   border-color: transparent #2196f3 transparent transparent;
 }
+.icon-search {
+  width: 1.5em;
+  height: 1.5em;
+  transform: rotate(-40deg);
+}
+.icon-search:before,
+.icon-search:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+}
+.icon-search:before {
+  width: 0.75em;
+  height: 0.75em;
+  border: 0.2em solid #2196f3;
+  border-radius: 50%;
+}
+.icon-search:after {
+  height: 0.75em;
+  width: 0.2em;
+  margin-top: -0.03em;
+  border-radius: 0.2em;
+  background-color: #2196f3;
+}
+.icon-menu {
+  width: 1.5em;
+  height: 1em;
+  margin: 0.25em auto;
+  background: linear-gradient(#2196f3 0%, #2196f3 20%, transparent 20%, transparent 40%, #2196f3 40%, #2196f3 60%, transparent 60%, transparent 80%, #2196f3 80%);
+}

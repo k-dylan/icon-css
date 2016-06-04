@@ -21,7 +21,9 @@ header h1 {
     padding: 10px;
     height: 45px;
     width: 55px;
-    /*background-color: #dadada;*/
+}
+.dome:hover {
+    background-color: #dadada;    
 }
 .dome p {
     margin: 0;

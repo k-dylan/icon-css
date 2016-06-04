@@ -1,0 +1,48 @@
+
+showContent()
+    content ''
+    display inline-block
+    
+
+.icon 
+    &-play 
+        border-width .7em 0 .7em .7em
+        border-style solid
+        border-color transparent transparent transparent $mainColor
+    &-pause
+        &:before
+        &:after
+            showContent()
+            height 1.4em
+            width .25em
+            margin 0 .1em
+            background-color $mainColor
+    &-next
+        &:before 
+            @extend .icon-play
+            showContent()
+            height 0
+        &:after 
+            showContent()            
+            width .2em
+            height 1.4em 
+            margin-left .1em 
+            background-color $mainColor
+    &-prev
+        &:before
+            @extend .icon-next:after
+        &:after 
+            showContent()
+            height 0
+            margin-left .1em
+            border-width .7em .7em .7em 0
+            border-style solid
+            border-color transparent $mainColor transparent transparent
+    &-forward
+        &:before
+        &:after
+            @extend .icon-next:before
+    &-rewind
+        &:before
+        &:after
+            @extend .icon-prev:after

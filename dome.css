@@ -28,3 +28,6 @@ header h1 {
 .dome p {
     margin: 0;
 }
+.dome [class*=icon] {
+    font-size: 1.5em;
+}

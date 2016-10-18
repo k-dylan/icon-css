@@ -1,0 +1,24 @@
+.icon-setting
+  width 1em
+  height 1em
+  border-radius 50%
+  position relative
+  background linear-gradient(0deg, transparent 40%, $mainColor 40%, $mainColor 60%, transparent 60%),
+      linear-gradient(60deg, transparent 42%, $mainColor 42%, $mainColor 58%, transparent 58%),
+      linear-gradient(120deg, transparent 42%, $mainColor 42%, $mainColor 58%, transparent 58%)
+  animation rotate 1.5s linear infinite
+  &:after
+  &:before 
+    content ''
+    posCenter()
+    border-radius 50%
+  &:after 
+    width (@width / 3) * 2
+    height (@height / 3) * 2
+    background-color $mainColor
+    z-index 1
+  &:before 
+    width (@width / 3)
+    height (@height / 3)
+    background-color #fff
+    z-index 2

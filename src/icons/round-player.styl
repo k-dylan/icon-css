@@ -1,0 +1,98 @@
+
+.icon-round
+  &-stop 
+    width 1em
+    height 1em
+    border .1em solid $mainColor
+    border-radius 50% 
+    position relative
+    &:after 
+      content ''
+      posCenter()
+      width (@width / 3)
+      height (@height / 3)
+      background-color $mainColor
+
+  &-pause
+    width 1em
+    height 1em
+    position relative
+    border .1em solid $mainColor
+    border-radius 50%
+    &:after
+    &:before 
+      content ''
+      width @width * 0.12
+      height @height * 0.5
+      position absolute
+      top @height * 0.4   
+      background-color $mainColor    
+    &:before  
+      left @width * 0.5 - 0.25
+    &:after 
+      right @width * 0.5 - 0.2
+  
+  
+  &-play
+    width 1em
+    height 1em
+    border .1em solid $mainColor
+    border-radius 50%
+    position relative
+    &:after 
+      content ''
+      border-width @width * .35
+      border-style solid
+      border-color transparent transparent transparent $mainColor
+      position absolute
+      left @width * .3
+      top @height * .1
+
+  &-next
+    width 1em
+    height 1em
+    border .1em solid $mainColor
+    border-radius 50%
+    position relative
+    &:before 
+      content ''
+      border-width @width * .35
+      border-style solid
+      border-color transparent transparent transparent $mainColor
+      position absolute
+      left @width * .2
+      top @height * .1
+    &:after 
+      content ''
+      display block
+      position absolute
+      left @width * .6
+      top @height * .1
+      width @width * .1
+      height @height * .65
+      background-color $mainColor
+
+  &-prev 
+    width 1em
+    height 1em
+    border .1em solid $mainColor
+    border-radius 50%
+    position relative
+    &:before 
+      content ''
+      display block
+      border-width @width * .35
+      border-style solid
+      border-color transparent $mainColor transparent transparent
+      position absolute
+      right @width * .2
+      top @height * .1
+    &:after 
+      content ''
+      display block
+      width @width * .1
+      height @height * .7
+      position absolute
+      left @width * 1
+      top @height * .15
+      background-color $mainColor

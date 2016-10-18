@@ -1,46 +1,47 @@
 
-
+showContent()
+  content ''
+  display inline-block
+  
 .icon 
-    &-play 
-        border-width .5em 0 .5em 1em
-        border-style solid
-        border-color transparent transparent transparent $mainColor
-    &-pause
-        &:before
-        &:after
-            showContent()
-            height 1em
-            width .25em
-            margin 0 .1em
-            background-color $mainColor
-    &-next
-        &:before 
-            showContent()
-            border-width .5em 0 .5em .5em
-            border-style solid
-            border-color transparent transparent transparent $mainColor
-            height 0
-        &:after 
-            showContent()            
-            width .2em
-            height 1em 
-            margin-left .1em 
-            background-color $mainColor
-    &-prev
-        &:before
-            @extend .icon-next:after
-        &:after 
-            showContent()
-            height 0
-            margin-left .1em
-            border-width .5em .5em .5em 0
-            border-style solid
-            border-color transparent $mainColor transparent transparent
-    &-forward
-        &:before
-        &:after
-            @extend .icon-next:before
-    &-rewind
-        &:before
-        &:after
-            @extend .icon-prev:after
+  &-play 
+    border-width .4em 0 .4em .8em
+    margin-top .1em
+    margin-bottom .1em
+    border-style solid
+    border-color transparent transparent transparent $mainColor
+  &-pause
+    &:before
+    &:after
+      showContent()
+      height .8em
+      width .2em
+      margin 0 .1em
+      background-color $mainColor
+  &-next
+    &:before 
+      showContent()
+      border-width .4em 0 .4em .4em
+      border-style solid
+      border-color transparent transparent transparent $mainColor
+    &:after 
+      showContent()            
+      width .1em
+      height .75em 
+      background-color $mainColor
+  &-prev
+    &:before
+      @extend .icon-next:after
+    &:after 
+      showContent()
+      border-width .4em .4em .4em 0
+      border-style solid
+      border-color transparent $mainColor transparent transparent
+  &-forward
+    &:before
+    &:after
+      @extend .icon-next:before
+  &-rewind
+    &:before
+    &:after
+      @extend .icon-prev:after

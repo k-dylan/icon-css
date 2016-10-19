@@ -1,24 +1,35 @@
 
 $mainColor = #2196f3;
 
-showContent()
-    content ''
-    display inline-block
-    
-    
+// 水平垂直居中，
+// 父节点设置position:relative
+posCenter() 
+  position absolute
+  margin auto
+  top 0
+  bottom 0
+  left 0
+  right 0
+
+  
 [class*=icon-] 
+  box-sizing border-box
+  display inline-block
+  vertical-align middle
+  line-height 1
+  &:before
+  &:after
     box-sizing border-box
-    display inline-block
-    // vertical-align middle
-    line-height 1
-    &:before
-    &:after
-        box-sizing border-box
-        
-    
+         
+@import "./animation"  
 @import "icons/player" 
 @import "icons/search"
 @import "icons/menu"
-@import "icons/mail"
+@import "icons/mail" 
 @import "icons/music"
-@import "icons/click"
+@import "icons/clock"
+@import "icons/round-player" 
+@import "icons/file"  
+@import "icons/setting"
+@import "icons/loading"  
+@import "icons/progress"

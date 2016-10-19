@@ -6,6 +6,7 @@ var stylus = require('gulp-stylus');
 
 gulp.task('server', function () {
     connect.server({
+        port: 3000,
         root: './',
         livereload: true
     });
